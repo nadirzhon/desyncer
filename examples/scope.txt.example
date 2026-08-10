@@ -1,0 +1,4 @@
+# DESYNCER scope allowlist — по одному суффиксу домена на строку.
+# Пример:
+# target.example
+# staging.target.example

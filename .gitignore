@@ -1,0 +1,11 @@
+# сборка
+*.o
+*.a
+desyncer
+# отчёты и артефакты прогонов
+*_report.txt
+desyncer_report.txt
+poc*.txt
+# ОС/редактор
+.DS_Store
+*.swp
