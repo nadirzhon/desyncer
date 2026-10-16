@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build (g++ / C++17, stdlib only)
+        run: make
+      - name: Smoke — binary runs and prints usage
+        run: ./desyncer --help
